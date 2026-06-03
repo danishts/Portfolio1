@@ -1,0 +1,212 @@
+// import React, { useState } from "react";
+// import im from "../assets/im.png";
+
+// function Portfolio() {
+//   const [active, setActive] = useState("ALL");
+
+//   const tabs = ["ALL", "CODE", "DESIGN"];
+
+//   return (
+//     <div className="min-h-screen bg-[#d9d9d9] flex flex-col items-center font-montserrat">
+
+//       {/* IMAGE + TITLE */}
+//       <div className="relative w-full">
+//         <img src={im} alt="portfolio" className="w-full h-auto object-cover" />
+
+//         <div className="absolute inset-0 flex items-center justify-center">
+//           <h1 className="w-full max-w-[404px] border-[6px] md:border-[8px] border-black flex justify-center items-center font-bold text-[22px] md:text-[30px] tracking-[0.25em] py-4 text-center">
+//             PORTFOLIO
+//           </h1>
+//         </div>
+//       </div>
+
+//       {/* BLACK BAR */}
+//       <div className="w-full h-16 bg-black flex flex-col items-center justify-center">
+
+//         <div className="flex gap-12 text-[14px] font-semibold">
+
+//           {tabs.map((item) => (
+//             <button
+//               key={item}
+//               onClick={() => setActive(item)}
+//               className={`transition-all duration-200 ${
+//                 active === item
+//                   ? "text-white scale-110"
+//                   : "text-gray-500"
+//               }`}
+//             >
+//               {item}
+//             </button>
+//           ))}
+
+//         </div>
+
+//         {/* FIXED LINE */}
+//         <div className="w-72 h-[2px] bg-gray-500 mt-2 relative">
+//           <div
+//             className="h-[2px] bg-white transition-all duration-300"
+//             style={{
+//               width:
+//                 active === "ALL"
+//                   ? "33%"
+//                   : active === "CODE"
+//                   ? "66%"
+//                   : "100%",
+//             }}
+//           />
+//         </div>
+
+//       </div>
+
+//     </div>
+//   );
+// }
+
+// // export default Portfolio;import React, { useState } from "react";
+// import React, { useState } from "react";
+// import im from "../assets/im.png";
+
+// import img1 from "../assets/Project.png";
+// import img2 from "../assets/Rect.png";
+// import img3 from "../assets/pro.png";
+
+// function Portfolio() {
+//   const [active, setActive] = useState("ALL");
+
+//   const tabs = ["ALL", "CODE", "DESIGN"];
+
+//   // 🔥 6 images with reordered sequence
+//   const projects = [img2, img3, img1, img1, img2, img3];
+
+//   return (
+//     <div className="min-h-screen bg-[#d9d9d9] flex flex-col items-center font-montserrat">
+//       {/* IMAGE + TITLE */}
+//       <div className="relative w-full">
+//         <img src={im} alt="" className="w-full h-auto object-cover" />
+
+//         <div className="absolute inset-0 flex items-center justify-center">
+//           <h1 className="w-full max-w-[404px] border-[6px] md:border-[8px] border-black flex justify-center items-center font-bold text-[22px] md:text-[30px] tracking-[0.25em] py-4 text-center">
+//             PORTFOLIO
+//           </h1>
+//         </div>
+//       </div>
+
+//       {/* BLACK BAR */}
+//       <div className="w-full h-16 bg-[#1A1A1A] flex flex-col items-center justify-center">
+//         <div className="flex gap-12 text-[14px] font-semibold">
+//           {tabs.map((item) => (
+//             <button
+//               key={item}
+//               onClick={() => setActive(item)}
+//               className={`transition-all ${
+//                 active === item ? "text-white scale-110" : "text-gray-500"
+//               }`}
+//             >
+//               {item}
+//             </button>
+//           ))}
+//         </div>
+
+//         <div className="w-72 h-[2px] bg-gray-500 mt-2 relative">
+//           <div
+//             className="h-[2px] bg-white transition-all duration-300"
+//             style={{
+//               width:
+//                 active === "ALL" ? "33%" : active === "CODE" ? "66%" : "100%",
+//             }}
+//           />
+//         </div>
+//       </div>
+
+//       {/* 🔥 PROJECT GRID (FIXED SIZE, NO TEXT, RESPONSIVE) */}
+//       <div className=" w-full flex justify-center">
+//         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-0">
+//           {projects.map((img, index) => (
+//             <div key={index} className="w-[640px] h-[400px] max-w-full">
+//               <img src={img} alt="" className="w-full h-full object-cover" />
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Portfolio;
+
+import React, { useState } from "react";
+import im from "../assets/im.png";
+
+import img1 from "../assets/Project.png";
+import img2 from "../assets/Rect.png";
+import img3 from "../assets/pro.png";
+
+function Portfolio() {
+  const [active, setActive] = useState("ALL");
+
+  const tabs = ["ALL", "CODE", "DESIGN"];
+
+  const projects = [img2, img3, img1, img1, img2, img3];
+
+  return (
+    <div className="min-h-screen bg-[#d9d9d9] flex flex-col items-center font-montserrat">
+      {/* IMAGE + TITLE */}
+      <div className="relative w-full">
+        <img src={im} alt="" className="w-full h-auto object-cover" />
+
+        <div className="absolute inset-0 flex items-center justify-center">
+          <h1 className="w-full max-w-[404px] border-[6px] md:border-[8px] border-black flex justify-center items-center font-bold text-[22px] md:text-[30px] tracking-[0.25em] py-4 text-center">
+            PORTFOLIO
+          </h1>
+        </div>
+      </div>
+
+      {/* BLACK BAR */}
+      <div className="w-full h-16 bg-[#1A1A1A] flex flex-col items-center justify-center">
+        <div className="flex gap-12 text-[14px] font-semibold">
+          {tabs.map((item) => (
+            <button
+              key={item}
+              onClick={() => setActive(item)}
+              className={`transition-all ${
+                active === item ? "text-white scale-110" : "text-gray-500"
+              }`}
+            >
+              {item}
+            </button>
+          ))}
+        </div>
+
+        <div className="w-72 h-[2px] bg-gray-500 mt-2 relative">
+          <div
+            className="h-[2px] bg-white transition-all duration-300"
+            style={{
+              width:
+                active === "ALL" ? "33%" : active === "CODE" ? "66%" : "100%",
+            }}
+          />
+        </div>
+      </div>
+
+      {/* 🔥 PROJECT GRID */}
+      <div className="w-full flex justify-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-0">
+          {projects.map((img, index) => (
+            <div key={index} className="w-[640px] h-[400px] max-w-full">
+              <img src={img} alt="" className="w-full h-full object-cover" />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* 🔥 LAST TEXT (ADDED HERE) */}
+      <div className="w-full flex bg-[#1A1A1A] justify-center items-center h-16 ">
+        <p className="text-center text-white  justify-center flex font-semibold text-[20px] leading-[100%]">
+          And many more to come!
+        </p>
+      </div>
+    </div>
+  );
+}
+
+export default Portfolio;

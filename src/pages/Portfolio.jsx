@@ -282,18 +282,18 @@ function Portfolio() {
                     CODED • DESIGNED
                   </p>
 
-                  <h2 className="mt-3 font-bold text-[25px] leading-[128%] tracking-[0.2054em] text-center uppercase">
+                  <h2 className="mt-6 font-bold text-[25px] leading-[128%] tracking-[0.2054em] text-center uppercase">
                     EATSOME.
                   </h2>
 
-                  <p className="mt-2 font-medium text-[10px] text-center">
+                  <p className="mt-4 font-medium text-[10px] text-center">
                     Restaurant browsing in React.js
                  
 
                    
                   </p>
 
-                  <div className="flex gap-4 mt-6">
+                  <div className="flex gap-4 mt-8">
                     <button className="border-l-2 border-r-2 border-white px-4 py-1 font-semibold text-[12px] tracking-[0.095em]">
                       DEMO
                     </button>

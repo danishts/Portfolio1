@@ -288,10 +288,9 @@ function Portfolio() {
 
                   <p className="mt-2 font-medium text-[10px] text-center">
                     Restaurant browsing in React.js
-                  </p>
+                 
 
-                  <p className="font-medium text-[10px] text-center">
-                    (Using Yelp API)
+                   
                   </p>
 
                   <div className="flex gap-4 mt-6">

@@ -186,8 +186,8 @@
 //dad
 
 import React from "react";
-
 import itb from "../assets/ITB.png";
+
 import ima from "../assets/ima.png";
 import vect from "../assets/Vect.png";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
@@ -196,6 +196,7 @@ import About from "./About";
 import Skills from "./Skills";
 import Portfolio from "./Portfolio";
 import Contact from "./Contact";
+import HeroCard from "../components/HeroCard";
 
 function Home() {
   return (
@@ -282,7 +283,7 @@ function Home() {
       </div>
 
       {/* BOTTOM SECTION */}
-      <div className="bg-[#1D1D1D] text-white px-6 py-10 md:p-16 h-auto">
+      {/* <div className="bg-[#1D1D1D] text-white px-6 py-10 md:p-16 h-auto">
         <h1 className="text-[30px] md:text-[32px] font-montserrat">
           IT BERRIES
         </h1>
@@ -304,8 +305,8 @@ function Home() {
         <h2 className="inline-block mt-6 px-4 py-2 text-[15px] border-l-4 border-r-4 border-white">
           READ MORE
         </h2>
-      </div>
-
+      </div> */}
+<HeroCard/>
       {/* 🔥 SECTIONS BELOW HERO */}
       <div id="about">
         <About />

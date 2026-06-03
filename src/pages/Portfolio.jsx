@@ -212,7 +212,7 @@
 // export default Portfolio;
 import React, { useState } from "react";
 import im from "../assets/im.png";
-
+import img4 from "../assets/P.png";
 import img1 from "../assets/Project.png";
 import img2 from "../assets/Rect.png";
 import img3 from "../assets/Pro.png";
@@ -222,7 +222,7 @@ function Portfolio() {
 
   const tabs = ["ALL", "CODE", "DESIGN"];
 
-  const projects = [img1, img2, img3, img2, img3, img1];
+  const projects = [img1, img2, img3, img4, img3, img1];
 
   return (
     <div className="min-h-screen bg-[#d9d9d9] flex flex-col items-center font-montserrat">

@@ -33,11 +33,17 @@ function Skills() {
       <h1 className="w-full max-w-[404px] border-[6px] md:border-[8px] border-black flex justify-center items-center font-bold text-[22px] md:text-[30px] tracking-[0.25em] md:tracking-[0.35em] py-4 text-center">
         SKILLS
       </h1>
-
-      {/* USING NOW */}
-      <h2 className="font-bold mt-8 text-[22px] md:text-[30px] tracking-[0.18em] text-center">
+      {/* <div className="w-full bg-amber-600">
+    
+      <h2 className="font-bold mt-8 bg-amber-300 text-[22px]  md:text-[30px] tracking-[0.18em] ">
         USING NOW:
       </h2>
+      </div> */}
+      <div className="w-full">
+        <h2 className="font-bold mt-8 text-[22px] md:text-[30px] tracking-[0.18em] text-center lg:pl-[470px] lg:text-left">
+          USING NOW:
+        </h2>
+      </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 md:gap-10 text-center mt-6 mb-10">
         {/* HTML */}
@@ -106,9 +112,14 @@ function Skills() {
       </div>
 
       {/* LEARNING */}
-      <h2 className="font-bold text-[22px] md:text-[30px] tracking-[0.18em] text-center">
+      {/* <h2 className="font-bold text-[22px] md:text-[30px] tracking-[0.18em] text-center">
         LEARNING:
-      </h2>
+      </h2> */}
+      <div className="w-full">
+        <h2 className="font-bold mt-8 text-[22px] md:text-[30px] tracking-[0.18em] text-center lg:pl-[470px] lg:text-left">
+          LEARNING:
+        </h2>
+      </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 md:gap-10 text-center mt-6 mb-10">
         <div className="flex flex-col items-center">
@@ -141,10 +152,14 @@ function Skills() {
       </div>
 
       {/* OTHER SKILLS */}
-      <h2 className="font-bold text-[22px] text-left md:text-[30px] tracking-[0.18em] text-center">
+      {/* <h2 className="font-bold text-[22px] text-left md:text-[30px] tracking-[0.18em] text-center">
         OTHER SKILLS:
-      </h2>
-
+      </h2> */}
+      <div className="w-full">
+        <h2 className="font-bold mt-8 text-[22px] md:text-[30px] tracking-[0.18em] text-center lg:pl-[470px] lg:text-left">
+          OTHER SKILLS:
+        </h2>
+      </div>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 md:gap-10 text-center mt-6">
         <div className="flex flex-col items-center">
           <SiNodedotjs className="text-green-600 w-14 h-14 md:w-20 md:h-20" />

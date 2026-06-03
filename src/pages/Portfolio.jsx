@@ -139,7 +139,7 @@ import im from "../assets/im.png";
 
 import img1 from "../assets/Project.png";
 import img2 from "../assets/Rect.png";
-import img3 from "../assets/pro.png";
+import img3 from "../assets/Pro.png";
 
 function Portfolio() {
   const [active, setActive] = useState("ALL");

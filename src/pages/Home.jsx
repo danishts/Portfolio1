@@ -231,7 +231,7 @@ function Home() {
             </p>
 
             {/* ICONS */}
-            <div className="flex gap-3 lg:gap-4 mt-6 lg:mt-8">
+            {/* <div className="flex gap-3 lg:gap-4 mt-6 lg:mt-8">
               <div className="w-9 h-9 lg:w-10 lg:h-10 flex justify-center items-center bg-[#C4C4C4] rounded">
                 {" "}
                 <FaGithub className="text-2xl cursor-pointer hover:scale-110 transition" />
@@ -244,6 +244,38 @@ function Home() {
                 {" "}
                 <FaEnvelope className="text-2xl cursor-pointer hover:scale-110 transition" />
               </div>
+            </div> */}
+
+            <div className="flex gap-3 lg:gap-4 mt-6 lg:mt-8">
+              {/* GitHub */}
+              <a
+                href="https://github.com/danishts"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="w-9 h-9 lg:w-10 lg:h-10 flex justify-center items-center bg-[#C4C4C4] rounded">
+                  <FaGithub className="text-2xl cursor-pointer hover:scale-110 transition" />
+                </div>
+              </a>
+
+              {/* LinkedIn */}
+              <a
+                href="https://www.linkedin.com/in/danish-saddique-5a3a12232/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="w-9 h-9 lg:w-10 flex justify-center items-center lg:h-10 bg-[#C4C4C4] rounded">
+                  <FaLinkedin className="text-2xl cursor-pointer hover:scale-110 transition" />
+                </div>
+              </a>
+
+             
+              {/* Email */}
+              <a href="mailto:danishsaddique519@gmail.com">
+                <div className="w-9 h-9 lg:w-10 flex justify-center items-center lg:h-10 bg-[#C4C4C4] rounded">
+                  <FaEnvelope className="text-2xl cursor-pointer hover:scale-110 transition" />
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -306,7 +338,7 @@ function Home() {
           READ MORE
         </h2>
       </div> */}
-<HeroCard/>
+      <HeroCard />
       {/* 🔥 SECTIONS BELOW HERO */}
       <div id="about">
         <About />
